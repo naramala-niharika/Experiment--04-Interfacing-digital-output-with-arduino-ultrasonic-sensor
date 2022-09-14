@@ -1,5 +1,6 @@
 # EXPERIMENT-NO--05-Distance measurement using Ultrasonic sensor
-
+NAME : Naramala Niharika
+Reg No: 212221240031
 ## AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
  
@@ -37,7 +38,7 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 ### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
 
 
-![image](https://user-images.githubusercontent.com/36288975/166430594-5adb4ca9-5a42-4781-a7e6-7236b3766a85.png)
+![image](https://github.com/naramala-niharika/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/blob/main/circuit%204.PNG?raw=true)
 
 
 
@@ -53,29 +54,43 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 9.	Ensure safety before powering up the device 
 10.	Plot the graph for the output voltage vs the resistance 
 
+### PROGRAM :
+```
+const int trigpin (2);
+const int echopin (3);
+long duration;
+int distance;
+void setup()
+{
+  pinMode(trigpin,OUTPUT);
+          pinMode(echopin,INPUT);
+          Serial.begin(9600);
+}
+void loop()
+{
+  digitalWrite(trigpin,LOW);
+  delay(20);
+  digitalWrite(trigpin,HIGH);
+  delay(20);
+  digitalWrite(trigpin,LOW);
+  duration=pulseIn(echopin,HIGH);
+  distance=duration*0.034/2;
+  delay(500);
+  Serial.print("distance = ");
+  Serial.print(distance);
+  Serial.println("CM");
+}
+```
 
-### PROGRAM 
+### Serial Monitor:
+![image](https://github.com/naramala-niharika/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/blob/main/serial%20monitor%204.PNG?raw=true)
 
 
 
 
+### Distance vs measurement table :
+![image](https://user-images.githubusercontent.com/94165377/190161463-aab9b786-9003-452d-82a6-ff7244f9d24c.PNG?raw=true)
 
-
-### Distance vs measurement table 
-
-			
- 
-			
-			
-			
-
-![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
-
-			
-			
-			
-			
-			
 			Average error = sum/ number of readings 
  
 
@@ -86,7 +101,9 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 
 
-### RESULTS
+### RESULTS:
+
+
 
 
 
