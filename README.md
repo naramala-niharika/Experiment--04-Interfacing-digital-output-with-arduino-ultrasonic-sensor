@@ -92,8 +92,10 @@ void loop()
 ### Distance vs measurement table :
 ![image](https://user-images.githubusercontent.com/94165377/190161463-aab9b786-9003-452d-82a6-ff7244f9d24c.PNG?raw=true)
 
-			Average error = sum/ number of readings 
- 
+### Average error = sum/ number of readings 
+           
+	          = 3.4/5
+		  =0.68
 
 
 
