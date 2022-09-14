@@ -93,9 +93,9 @@ void loop()
 ![image](https://user-images.githubusercontent.com/94165377/190161463-aab9b786-9003-452d-82a6-ff7244f9d24c.PNG?raw=true)
 
 ### Average error = sum/ number of readings 
-                  = 0.5+0.7+0.4+0.8+1.0
-	          = 3.4/5
-		  =0.68
+                 =0.5+0.7+0.4+0.8+1.0
+	         =3.4/5
+		 =0.68
 
 
 
