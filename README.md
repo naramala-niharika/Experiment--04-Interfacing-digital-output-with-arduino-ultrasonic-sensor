@@ -1,5 +1,6 @@
 # EXPERIMENT-NO--05-Distance measurement using Ultrasonic sensor
 NAME : Naramala Niharika
+
 Reg No: 212221240031
 ## AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
@@ -102,6 +103,7 @@ void loop()
 
 
 ### RESULTS:
+Thus the distance value is measured in "CM" using ultrasonic sensor
 
 
 
